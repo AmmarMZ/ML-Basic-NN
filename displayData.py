@@ -1,5 +1,5 @@
 from IPython import get_ipython
-get_ipython().run_line_magic('matplotlib', 'inline')
+#get_ipython().run_line_magic('matplotlib', 'inline')
 
 import matplotlib.pyplot as plt	
 from math import floor, sqrt, ceil
