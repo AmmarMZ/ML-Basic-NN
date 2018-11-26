@@ -1,6 +1,7 @@
 from scipy.io import loadmat
 import numpy as np
 from lrCostFunction import lrCostFunction
+from oneVsAll import oneVsAll
 
 from displayData import displayData
 
@@ -41,3 +42,15 @@ print('Gradients:\n');
 print(grad);
 print('Expected gradients:\n');
 print(' 0.146561\n -0.548558\n 0.724722\n 1.398003\n');
+
+
+# ============ Part 2b: One-vs-All Training ============
+print('\nTraining One-vs-All Logistic Regression...\n')
+
+lambda_t = 0.1
+num_labels = 10
+all_theta = oneVsAll(X, y, num_labels, lambda_t);
+
+
+
+
